@@ -50,15 +50,32 @@ while (isSunk == false) {
 
 	currentGuess = prompt("enter a number between 0 - 6"); 
 
-	if currentGuess < 0 || currentGuess > 6 {
-		alert("please enter valid number")
+	if (currentGuess < 0 || currentGuess > 6) {
+		alert("please enter valid number");
 	} else {
-		guesses ++;
-	}
+		guesses = guesses + 1;
+		
 
-}
+		if (currentGuess == location1 || currentGuess == location2 || currentGuess == location3) {
+			alert("you have a hit");
+			hits = hits + 1;
+			alert("number of hits " + hits + " number of guesses" + guesses);
+			
+			if (hits == 3) {
+				isSunk = true;
+				alert("you sunk my battleshit");
+			} 
 
+			} else {
+				alert("miss, try again");
+			}
+		}		
 
+};
+
+var results = "you took " + guesses + " guesses, which means your shooting accuracy was " + (3/guesses);
+
+alert(results);
 
 
 
