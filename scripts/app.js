@@ -43,6 +43,7 @@ var hits = 0;
 //var misses = 0; dont need this...just want to know the hits, assume not a hit it's a miss
 var isSunk = false; //keeps track on whether the ship is sunk or not, will be set to true when the ship is sunk
 
+var tally = document.getElementById("tally");
 //now the loop
 
 
@@ -55,12 +56,14 @@ while (isSunk == false) {
 	} else {
 		guesses = guesses + 1;
 		
+		
 
 		if (currentGuess == location1 || currentGuess == location2 || currentGuess == location3) {
 			alert("you have a hit");
 			hits = hits + 1;
-			alert("number of hits " + hits + " number of guesses" + guesses);
-			
+			alert("number of hits " + hits + " number of guesses " + guesses);
+			tally.innerHTML = ("you made " + guesses + "guesses");
+
 			if (hits == 3) {
 				isSunk = true;
 				alert("Game over! You sunk my battleship!");
@@ -77,6 +80,8 @@ while (isSunk == false) {
 var results = "you took " + guesses + " guesses, which means your shooting accuracy was " + (3/guesses);
 
 alert(results);
+
+
 
 
 
