@@ -7,7 +7,10 @@ h1 {
 	color: grey;
 }
 
-#tally {
+#tally,
+#greeting,
+#numberOfGuesses,
+#numberOfHits {
 	font-size: 20px;
 	color: white;
 }
