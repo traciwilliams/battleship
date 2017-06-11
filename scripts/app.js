@@ -63,7 +63,8 @@ while (isSunk == false) {
 			
 			if (hits == 3) {
 				isSunk = true;
-				alert("you sunk my battleshit");
+				alert("Game over! You sunk my battleship!");
+
 			} 
 
 			} else {
