@@ -58,10 +58,10 @@ var tally = document.getElementById("tally");
 var greeting = document.getElementById("greeting");
 var numberOfGuesses = document.getElementById("numberOfGuesses");
 var numberOfHits = document.getElementById("numberOfHits");
-var name;
+//var name;
 //now the loop
 
-var response = prompt("hello, please enter your name") +  name + " lets play";
+var name = prompt("hello, please enter your name");
 /*
 after working thru this...made variables...made them global
 then used a while loop and while the variable isSunk is false we are asking the user for a number between 0 - 6
@@ -103,7 +103,7 @@ while (isSunk == false) {
 
 			if (hits == 3) {
 				isSunk = true;
-				alert("Game over! You sunk my battleship!" + results);
+				alert("Game over!" + name + " You sunk my battleship!");
 
 			} 
 
@@ -114,7 +114,7 @@ while (isSunk == false) {
 
 };
 
-var results = "you took " + guesses + " guesses, which means your shooting accuracy was " + (3/guesses);
+var results = name +  " you took " + guesses + " guesses, which means your shooting accuracy was " + (3/guesses);
 
 alert(results);
 
