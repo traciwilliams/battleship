@@ -10,3 +10,9 @@ div#board {
 	margin: 0 auto;
 	background: url("images/board.jpg") no-repeat;
 }
+
+table,
+tr,
+td {
+	border: 1px solid pink;
+}
