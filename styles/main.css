@@ -8,5 +8,5 @@ div#board {
 	width: 1024px;
 	height: 863px;
 	margin: 0 auto;
-	background: url(styels/images/board.jpg) no-repeat;
+	background: url("images/board.jpg") no-repeat;
 }
