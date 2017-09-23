@@ -51,7 +51,7 @@ input {
 }
 
 .hit {
-	background: url("images/ship.jpg") no-repeat center center;
+	background: url("images/ship.png") no-repeat center center;
 }
 
 .miss {
