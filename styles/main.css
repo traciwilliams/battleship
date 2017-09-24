@@ -2,6 +2,9 @@ body {
 	background-color: black;
 }
 
+#messageArea {
+	color: pink;
+}
 
 div#board {
 	position: relative;
